@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <title>Días de la semana</title>
+
+<script>
+        function mostrarDias() {
+            let dias = [
+                "Lunes",
+                "Martes",
+                "Miércoles",
+                "Jueves",
+                "Viernes",
+                "Sábado",
+                "Domingo"
+            ];
+
+            let resultado = "";
+
+            for (let i = 0; i < dias.length; i++) {
+                 resultado += "Día" + (i + 1) + ": " + dias[i] + "<br>";
+                 }
+
+                 document.getElementById("listaDias") .innerHTML = resultado;
+            }
+    </script>
+</head>
+
+<body>
+
+    <h2>Días de la semana</h2>
+
+    <button onclick="mostrarDias()">Mostrar días</button>
+
+    <br><br>
+
+     <div id="listaDias"></div>
+   
+    <p>Instrucciones: En esta pagina hay dos 
+        funciones, cada una tiene sus instrucciones, para 
+        volver a iniciar las funciones recarga la pagina</p>
+
+        <p>Funcion 1: presiona el boton para ver una lista de los días de la semana</p>
+        <input type="button" value="muestra días" onclick="meses()">
+        <br>
+
+        <p>Funcion 2: Introduce en la caja de texto el numero del cual 
+            quieres conocer la tabla de multiplicar, despues cliquea fuera 
+            de la caja de texto para ver el resultado</p>
+            <input type="number" value="" onblur="tablaMulti(value)">
+            <br>
+</body>
+</html>
